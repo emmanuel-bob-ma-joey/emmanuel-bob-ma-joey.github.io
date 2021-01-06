@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.0.1">
+   
+  
+    
+    
+ 
+   
     <title>Emmanuel Ma</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap-4.5.0-dist/css/bootstrap.css" rel="stylesheet">
+    <!--<link href="bootstrap-4.5.0-dist/css/bootstrap.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style>
       .bd-placeholder-img {
@@ -30,46 +34,176 @@
     <!-- Custom styles for this template -->
     <link href="index.css" rel="stylesheet"> <!--changed reference to html.css-->
   </head>
-  <body class="text-center cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" > 
+  <body id = "welcome" class="text-center cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" > 
     <!-- style="background-color:pink;"
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"> -->
-    <header class="masthead mb-auto" style="width: 100%;">
-    <div class="inner">
-      <h3 class="masthead-brand">Emmanuel Ma</h3>
-      <nav class="navbar navbar-expand-lg nav-masthead">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="assets/Resume.pdf">Resume</a>
-        <a class="nav-link" href="projects.html">Projects</a>
-      </nav>  
-      <button type="button" class="btn btn-outline-light" href="#" aria-pressed="true" onclick="myFunction()">Toggle dark mode</button>
-    </div>
-   
-    <img src="assets/Banner-Neuroplasticity.jpg"  width="100%" alt="banner";/>
+    <header id = "sidebar-wrapper" class="masthead mb-auto" style="width: 100%;">
+      <div id= "navbar-scrollspy" class="container" >
+        
+        <nav  class="navbar fixed-top navbar-expand-lg nav-masthead" style="background-color: lightslategrey;" >
+          <h3 class="masthead-brand">Emmanuel Ma</h3>
+          <div class="container" >
+            <a class=" nav-link"  href="#welcome">Welcome</a>
+            <a class="nav-item nav-link"  href="#projects">Projects</a>
+            <a class="nav-item nav-link"  href="#hobbies">Hobbies</a>
+          </div>
+          
+        </nav> 
+      </div>
+    
     </header>
-    <main role="main" class="inner cover" style="background-color: slateblue;" >
-      <h1 class="cover-heading">Welcome!</h1>
-      <p class="lead">My name is Emmanuel Ma and I am a first year student at McGill studying software engineering. When I'm not working on projects or doing programming competitions, I enjoy running, playing table tennis and jamming on the piano/violin. My dream in life is to own a grand piano someday. Take a look around to learn more about me!</p>
-      <img src="assets/banana.jpg" width="256px" height="256px" class="ml-3" alt="image">
+    <main role="main" data-spy="scroll" data-target = "#navbar-scrollspy" data-offset="0" class=" container"  >
+      <div class= " container jumbotron" style="background-color: transparent;" >
+        
+        <div  class="container" style="background-color:whitesmoke; padding-bottom: 2em;" >
+          <h1 >Welcome!</h1>
+          <div class="container" style="padding-bottom: 2em;">
+            <figure>
+              <img class="rounded" src="assets/profile.JPG"alt="profile picture" height="400px"/>
+              <figcaption>Man that's an aukward smile</figcaption>
+
+
+            </figure>
+           
+          </div>
+         
+          
+          <p class="lead">I'm a first year student at McGill studying software 
+          engineering. My natural habitat is hunched over a keyboard - piano or computer, depending on the 
+          time of day. No matter if I'm practicing Bach preludes, or finding the shortest 
+          path between two nodes in a graph, I'm always creating something beautiful.</p>
+          <a title="Email" href="mailto:emmanuel.ma@gmail.com " target="_blank" rel="no-follow"><img src="assets/mail_icon.png" alt="mail icon" width="60px" height="60px"></a>
+          <a title="linkedIn" href="https://www.linkedin.com/in/emmanuel-ma-5092261a5/" target= "_blank" rel="nofollow"><img src="assets/linkedin_icon.svg" alt= "linkedIn icon" width="60px" height="60px"/></a>
+          <a title="Github" href= "https://github.com/emmanuel-bob-ma-joey" target= "_blank" rel= "nofollow"><img src="assets/github_icon.svg" alt="Github icon" width="60px" height="60px"/></a>
+          <a title="Resume" href="assets/Resume-2.pdf" target="_blank" rel="nofollow"><img src="assets/resume_icon.png" alt="resume icon" width="60px" height="60px"/></a>
+          
+        </div>
+       
+      </div>
+      
+      <div class="inner cover" style="background-color: whitesmoke; padding: 1em;">
+        
+        <h2>About Me</h2>
+        <p class="lead">I've always enjoyed the process of creating elegant things. 
+          whether it be practicing for months on a single piano piece to really master it, or thinking of a 
+          clever way to implement a function, I love the challenge of pushing my limits to create something
+          beautiful. I'm always looking for ways to optimize, and thus, instead of writing a self-psychoanalytical
+           paper about me and my upbringing, instead here are my favourite songs at the moment:</p>
+        <ul style="list-style-type: none;">
+          <li><a target="_blank" href="https://www.youtube.com/watch?v=goU1Ei8I8uk">Kaerou - Fuji Kaze</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/watch?v=bt8wNQJaKAk&list=LL&index=9"> I LOVE... - Official髭男dism -</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/watch?v=Ht8M-1m20qA">The garden of everything - Maaya Sakamoto ft. Steve Conte</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/watch?v=yG1y5843-7U">Ashes of Dreams ~ New - Nier OST</a></li>
+          <li><a target="_blank" href="https://www.youtube.com/watch?v=2Q8HfOUcxxo">Rainin' with U - Heize</a></li>
+
+        </ul>
+      </div>
+      <!--spaghetti-->
+      <div id = "projects" style="background-color: transparent; height: 50px;">
+
+      </div>
+      <div  class="container" style="background-color: whitesmoke;">
+        <h2 >Projects</h2>
+        <div class="card-deck">
+          <div class="card">
+            <a title="competitive programming" href="https://github.com/emmanuel-bob-ma-joey/dmoj-problems" target="_blank" rel="nofollow"><img class="card-img-top" src="assets/graph.png" height="300px"alt="graph image"></a>
+            <div class="card-body">
+              <h5 class="card-title">Competitive Programming</h5>
+              <p class="card-text">solving coding problems by implementing different algorithms pertaining but not limited to DP and graph theory. </p>
+              <button type="button" class="btn">Python</button>
+              <button type="button" class="btn">C++</button>
+              <!--<button type="button" class="btn">Java</button>-->
+              
+            </div>
+          </div>
+          <div class="card">
+            <a title="EasyTip" href="https://devpost.com/software/easytip-jpdvef" target="_blank" rel="nofollow"><img class="card-img-top" src="assets/tipping.jpg" height="300px"alt="EasyTip"></a>
+            <div class="card-body">
+              <h5 class="card-title">EasyTip</h5>
+              <p class="card-text">Created at Hack the 6ix. A web app that makes tipping as simple as clicking a button. Makes tipping hassle free for both the customer and the waiter. </p>
+              <button type="button" class="btn">PHP</button>
+              <button type="button" class="btn">JS</button>
+              <button type="button" class="btn">HTML</button>
+              <button type="button" class="btn">CSS</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div id="hobbies" style="background-color: transparent; height: 50px;">
+
+      </div >
+      <div class="container" style="background-color: whitesmoke; opacity: 0.9;">
+        <h2 >Hobbies</h2>
+        <p class="lead">I enjoy running to stay active, with a current 5K PB 19:20 and 6k PB 23:40. 
+          During the winters when it gets too cold to run outside, I play table tennis instead. 
+          I learned piano and violin from a young age and don't plan on stopping anytime soon. Who knows, maybe someday I'll write my own songs....
+           Anyhow, here are some fun pictures and recordings. </p>
+        <div id="carouselExampleIndicators" class="carousel slide container "  style="width: 700px;">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="assets/xc_pic.jpg" alt="cross country " height="500px">
+              <div class="carousel-caption d-none d-md-block" style="color: white;">
+                <h5>ROPSAA XC Championships fall 2019</h5>
+              </div>
+            </div>
+            <div class="carousel-item" >
+              <img class="d-block w-100" src="assets/ping_pong.jpg" alt="ping pong" height="500px">
+              <div class="carousel-caption d-none d-md-block" style="color: white;">
+                <h5>2019 ROPSSAA Table Tennis Mixed Double Champions</h5>
+              </div>
+              
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/awards.JPG" alt="athletic awards" height="500px">
+              <div class="carousel-caption d-none d-md-block" style="color: white;">
+                <h5>Athletic awards</h5>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="background-color: grey; opacity: 1;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="background-color: grey; opacity: 1;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="flex-container " style="opacity: 0.9;">
+        
+          <div class=" flex-child">
+            <figure>
+              <video style="margin-bottom: -4em;" src="assets/fantasie_impromptu.MOV" width="400px" height="400px" controls>video not supported</video>
+              <figcaption>Chopin Fantasie Impromptu in C♯ minor Op. posth. 66</figcaption>
+  
+            </figure>
+            
+          </div>
+          <div class="flex-child">
+            <video src="assets/snow_halation.MOV" style="margin-bottom: -4em;" width="400" height="400" controls>video not supported</video>
+            <p>Snow Halation</p>
+          </div>
+      </div>
+      
+      
+      
+      
+      </div>
+
+      
     </main>
-    <div class="inner cover">
-      <h5>Media object</h5>
-      <p class="lead">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante la. Nulla vel metus la. Nulla vel metus la. Nulla vel metus la. Nulla vel metus la. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulpuscelerisque ante sollicitudin. Cras purus odio, vestibulum in vulpuscelerisque ante sollicitudin. Cras purus odio, vestibulum in vulpuscelerisque ante sollicitudin. Cras purus odio, vestibulum in vulpuscelerisque ante sollicitudin. Cras purus odio, vestibulum in vulpusollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-    </div>
+    <footer class="mastfoot mt-auto" style="background-color:burlywood">
+      
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
-  <footer class="mastfoot mt-auto" style="background-color: royalblue;">
-    <div class="inner">
-      <a title="Email" href="mailto:emmanuel.ma@gmail.com " target="_blank" rel="no-follow"><img src="assets/mail_icon.png" alt="mail icon" width="60px" height="60px"></a>
-      <a title="linkedIn" href="https://www.linkedin.com/in/emmanuel-ma-5092261a5/" target= "_blank" rel="nofollow"><img src="assets/linkedin_icon.svg" alt= "linkedIn icon" width="60px" height="60px"/></a>
-			<a title="Github" href= "https://github.com/emmanuel-bob-ma-joey" target= "_blank" rel= "nofollow"><img src="assets/github_icon.svg" alt="Github icon" width="60px" height="60px"/></a>
-      <p>Emmanuel Ma &trade;2020</p>
-    </div>
-  </footer>
-
-
-  <script>
-  function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-  }
-  </script>
+  
 </html>
