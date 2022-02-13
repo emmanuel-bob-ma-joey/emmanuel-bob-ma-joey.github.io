@@ -1,6 +1,6 @@
 //import logo from "./logo.svg";
 import "../App.css";
-import resume from "../assets/resume_2022.pdf";
+import resume from "../assets/Resume.pdf";
 import email from "../assets/mail_icon.png";
 import github from "../assets/github_icon.svg";
 import linkedin from "../assets/linkedin_icon.svg";
