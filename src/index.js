@@ -21,7 +21,7 @@ ReactDOM.render(
     </div>
 
     <App />
-    <div className="subtitle" id="projects">
+    {/* <div className="subtitle" id="projects">
       <h1>Projects</h1>
     </div>
     <div className="flex-container">
@@ -38,34 +38,7 @@ ReactDOM.render(
         text="A web app that uses an ML text summarizer and AI chatbot to make filling out insurance papers easier. "
         sourceLink="https://github.com/THe142857/shinz"
       />
-    </div>
-
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
-    <Poop />
-    <Footer />
+    </div> */}
   </React.StrictMode>,
   document.getElementById("root")
 );
