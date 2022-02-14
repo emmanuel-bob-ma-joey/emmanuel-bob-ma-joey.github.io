@@ -10,13 +10,25 @@ function App() {
   return (
     <div className="App" id="app">
       <header className="App-header">
-        <p>
-          I'm a second year student at McGill studying software engineering. My
-          natural habitat is hunched over a keyboard - piano or computer,
-          depending on the time of day. No matter if I'm practicing Bach
-          preludes, or finding the shortest path between two nodes in a graph,
-          I'm always creating something beautiful.
-        </p>
+        <p>*curently migrating the site from static html to react*</p>
+        <div
+          className="textbox"
+          style={{
+            backgroundColor: "turquoise",
+            display: "flex",
+            alignSelf: "center",
+            width: "800px",
+          }}
+        >
+          <p>
+            Hi! I'm a second year student at McGill studying software
+            engineering. I am currently a helpdesk tutor for CSUS McGill, and
+            also a Development Coordinator at Enactus McGill, working on our
+            latest community initiative! Some of my favourite hobbies include
+            running, playing ping pong, and practicing piano and violin.
+          </p>
+        </div>
+
         <div style={{ backgroundColor: "blue", height: 10 }}>
           <div className="icon-div">
             <a

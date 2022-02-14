@@ -11,9 +11,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className="flex-container">
+    <div className="flex-container fixed-top">
       <div className="navbar">
         <a href="#">Emmanuel Ma</a>
+
         <div className="flex-container">
           <Banner />
         </div>
@@ -21,24 +22,29 @@ ReactDOM.render(
     </div>
 
     <App />
-    {/* <div className="subtitle" id="projects">
+
+    <div className="subtitle" id="projects">
       <h1>Projects</h1>
     </div>
     <div className="flex-container">
-      <Project
-        title="News Article Web Scraper"
-        subtitle="Python, Flask, mySQL, Vue, Bootstrap, Axios"
-        text=" Web scraper web app that scrapes news sites to algorithmically select positive articles.
+      <div className="flex-child">
+        <Project
+          title="News Article Web Scraper"
+          subtitle="Python, Flask, mySQL, Vue, Bootstrap, Axios"
+          text=" Web scraper web app that scrapes news sites to algorithmically select positive articles.
         "
-        sourceLink="https://github.com/lucmaxwell/McHacks-2021"
-      />
-      <Project
-        title="ML Text Summarizer Web App"
-        subtitle="Python, Flask, Bootstrap "
-        text="A web app that uses an ML text summarizer and AI chatbot to make filling out insurance papers easier. "
-        sourceLink="https://github.com/THe142857/shinz"
-      />
-    </div> */}
+          sourceLink="https://github.com/lucmaxwell/McHacks-2021"
+        />
+      </div>
+      <div className="flex-child">
+        <Project
+          title="ML Text Summarizer Web App"
+          subtitle="Python, Flask, Bootstrap "
+          text="A web app that uses an ML text summarizer and AI chatbot to make filling out insurance papers easier. "
+          sourceLink="https://github.com/THe142857/shinz"
+        />
+      </div>
+    </div>
   </React.StrictMode>,
   document.getElementById("root")
 );
